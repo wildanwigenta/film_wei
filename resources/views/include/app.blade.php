@@ -138,8 +138,8 @@
                   <a class="nav-link disabled">Disabled</a>
                 </li> -->
               </ul>
-              <form class="d-flex justify-content-end" role="search" action="/search" method="post">
-                @csrf
+              <form class="d-flex justify-content-end" role="search" action="/search" method="get">
+                {{-- @csrf --}}
                 <input class="form-control me-2" type="search" placeholder="Search" name="search" aria-label="Search">
                 <button class="btn btn-outline-primary" type="submit">Search</button>
               </form>
