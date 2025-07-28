@@ -30,4 +30,5 @@ Route::get('/now_playing',[App\Http\Controllers\Pagination::class,'now_playing']
 Route::get('/now_playing/{page}',[App\Http\Controllers\Pagination::class,'now_playing']);
 
 
-Route::post('/search',[App\Http\Controllers\Search::class,'index']);
+Route::get('/search',[App\Http\Controllers\Search::class,'index']);
+// Route::post('/search/{page}',[App\Http\Controllers\Search::class,'index']);
